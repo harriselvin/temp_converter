@@ -7,12 +7,16 @@ calc.addEventListener('click', tempConvert)
 
 function tempConvert() {
 
-    let result = parseFloat(fahrenheit.value - 32/1.8)
-    
-    if (fahrenheit.value = (typeof Number)) {
-        celsius.innerText = result
-    } else {
-        celsius.innerText = "Please Enter Number"
+    let result = parseFloat(fahrenheit.value - 32) * 5/9
+    let roundResult = Math.round(result * 100) / 100
+
+    try {
+        if (fahrenheit.value == "") throw "empty"
+        if (isNaN(result)) throw "not a number"
+
+        celsius.innerText = roundResult
+    } catch (error) {
+        celsius.innerText = "Input is " + error
     }
 }
 
