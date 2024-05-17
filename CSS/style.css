@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: lightblue;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: white;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.title h2 {
+    font-size: 40px;
+    padding: 10px 0 20px;
+}
+
+.title .info p {
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.calc {
+    margin: 0 0 30px;
+}
+
+.calc label input {
+    padding: 10px 0;
+    margin: 0 0 10px;
+    font-size: 20px;
+    outline: none;
+    border: 3px solid grey;
+    transition: .5s;
+}
+
+.calc label input:focus {
+    border: 3px solid yellowgreen;
+}
+
+.calc p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.btn .calculate{
+    height: 40px;
+    width: 200px;
+    background-color: lightblue;
+    margin: 0 0 20px;
+    transition: .3s;
+}
+
+.btn .clear{
+    height: 40px;
+    width: 50px;
+    background-color: rgb(255, 162, 162);
+    margin: 0 0 20px;
+    transition: .3s;
+}
+
+.btn .calculate:active {
+    opacity: .7;
+}
